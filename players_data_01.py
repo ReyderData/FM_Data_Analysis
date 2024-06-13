@@ -25,9 +25,7 @@ df = pd.read_html(os.path.join(sys.path[0], html), encoding='utf8')[0]
 df.to_csv(csv_file, index=False)
 print(df.head())
 
-#Create an output excel file | tests with this but currently not working
-#resultExcelFile = pd.ExcelWriter('D:\\IGNACI_STUFF\\FOOTBALL\\Data_Analyst\\MONEYBALL\\FM_PYTHON_MONEYBALL\\players_data.xlsx')
-#resultExcelFile = pd.ExcelWriter('players_data.xlsx')
+
 
 df_csv = pd.read_csv(csv_file)
 print(df_csv.head(2))
